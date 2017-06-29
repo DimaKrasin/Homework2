@@ -1,3 +1,5 @@
+package com.goit.homework;
+
 import java.util.Scanner;
 
 public class Homework2 {
