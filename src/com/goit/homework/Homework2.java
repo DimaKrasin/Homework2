@@ -15,12 +15,17 @@ public class Homework2 {
             System.out.print("Введите Ваше хобби: ");
             String hobby = sc.nextLine();
 
-            System.out.println("_________________________________________");
-            System.out.println("\nИмя: "+name+"\nГород: "+city+"\nВозраст: "+age+"\nХобби: "+hobby);
-            System.out.println("_________________________________________");
-            System.out.println("Человек по имени "+name+" живет в городе "+city+"."+"\nЭтому человеку "+age+" лет и любит он заниматься "+hobby+".");
-            System.out.println("_________________________________________");
-            System.out.println( name+" - имя\n"+city+" - город\n"+ age + " - возраст\n" + hobby + " - хобби" );
+            System.out.println("Выберите вариант(число) вывода текста : \n1 - табличный\n2 - текстовый\n3 - иной");
+            int chois = sc.nextInt();
+
+            switch(chois){
+                case 1: System.out.println("\nИмя: "+name+"\nГород: "+city+"\nВозраст: "+age+"\nХобби: "+hobby);
+                break;
+                case 2:System.out.println("Человек по имени "+name+" живет в городе "+city+"."+"\nЭтому человеку "+age+" лет и  любит он заниматься "+hobby+".");
+                break;
+                case 3: System.out.println( name+" - имя\n"+city+" - город\n"+ age + " - возраст\n" + hobby + " - хобби" );
+                    default: System.out.println("Вы выбрали неправильное значение (число)");
+            };
         }
     }
 
